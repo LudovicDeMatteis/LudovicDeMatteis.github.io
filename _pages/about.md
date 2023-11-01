@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Ludovic's Site"
+title: "About me"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -10,7 +10,6 @@ redirect_from:
 
 Note: [01/11/2023] This site is brand new and it may take some time to have it completly done. Please be patient and in the meantime do not hesitate to directly contact me.
 
-## About Me
 I am a PhD student between the Gepetto team at LAAS-CNRS and the Willow team at Inria Paris, under the supervision of Nicolas Mansard and Justin Carpentier. My work will mainly resolve around "Model Predictive Control for the locomotion of bipedal robots with complex actuation", which includes problematics on optimisation, automation and motion planning.
 
 I graduated from ENS Paris Saclay in 2023 with a Master degree in applied mathematics (MVA) and computer science and another in electrical engineering. I also passed (first position nation-wide in 2022) competitive exams to teach engineering science in french higher education. Find more about my education in the CV section of this site.
