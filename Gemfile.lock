@@ -271,7 +271,11 @@ DEPENDENCIES
   github-pages
   hawkins
   jekyll-feed
+  jekyll-gist
+  jekyll-paginate
+  jekyll-redirect-from
   jekyll-sitemap
+  kramdown-parser-gfm
   webrick
 
 BUNDLED WITH
