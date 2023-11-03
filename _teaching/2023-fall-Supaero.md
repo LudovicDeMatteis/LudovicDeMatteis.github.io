@@ -7,6 +7,8 @@ venue: "ISAE Supaero"
 date: 2023-09-01
 location: "Toulouse, France"
 ---
+*Fall 2023 (First year PhD)*
+---
 ## Context
 During the fall 2023 (first year of my PhD), I was a teacher assistant a [ISEA Supaero](https://www.isae-supaero.fr), supervising practical sessions and exercice sessions of the automation coursem given by Caroline Berard. This course was given to 4th year students (equivalent to first year of a Master's degree).
 
