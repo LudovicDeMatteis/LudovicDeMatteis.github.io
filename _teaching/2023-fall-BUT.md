@@ -8,9 +8,9 @@ date: 2023-09-01
 location: "Toulouse, France"
 ---
 *Fall 2023 (First year PhD)*
----
+
 ## Context
-During the fall 2023 (first year of my PhD), I had the opportunity to co-supervise (with [Vincent Bonnet](https://www.linkedin.com/in/vincent-david-bonnet/?originalSubdomain=fr)) practical sessions of the courses *Introduction to robotics* and *Advanced robotics* at the [University Institute of Technology of Toulouse (IUT)](https://iut.univ-tlse3.fr/genie-electrique-informatique-industrielle). Students where respectively in their second and third years of higher education with majors in electrical engineering and Industrial Information (GEII).
+During the fall 2023, I had the opportunity to co-supervise (with [Vincent Bonnet](https://www.linkedin.com/in/vincent-david-bonnet/?originalSubdomain=fr)) practical sessions of the courses *Introduction to robotics* and *Advanced robotics* at the [University Institute of Technology of Toulouse (IUT)](https://iut.univ-tlse3.fr/genie-electrique-informatique-industrielle). Students where respectively in their second and third years of higher education with majors in electrical engineering and Industrial Information (GEII).
 
 ## Content of the course 
 ### Introduction to robotics
