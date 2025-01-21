@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-Note: [01/11/2023] This site is brand new and it may take some time to have it completly done. Please be patient and in the meantime do not hesitate to directly contact me.
-
 I am a PhD student between the [Gepetto team](https://www.laas.fr/public/fr/gepetto) at [LAAS-CNRS](https://www.laas.fr) and the [Willow team](https://www.di.ens.fr/willow/) at [Inria Paris](https://www.inria.fr/fr/centre-inria-de-paris), under the supervision of [Nicolas Mansard](https://gepettoweb.laas.fr/nmansardx``) and [Justin Carpentier](https://jcarpent.github.io/). My work will mainly resolve around "Model Predictive Control for the locomotion of bipedal robots with complex actuation", which includes problematics on optimisation, automation and motion planning.
 
 I graduated from [ENS Paris Saclay](https://ens-paris-saclay.fr/) in 2023 with a Master degree in applied mathematics ([MVA](https://www.master-mva.com/)) and computer science and another in electrical engineering. I also passed (first position nation-wide in 2022) competitive exams to teach engineering science in french higher education. Find more about my education in the [CV](https://ludovicdematteis.github.io/cv/) section of this site.
