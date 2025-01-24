@@ -13,7 +13,7 @@ I am a PhD student between the [Gepetto team](https://www.laas.fr/public/fr/gepe
 I graduated from [ENS Paris Saclay](https://ens-paris-saclay.fr/) in 2023 with a Master degree in applied mathematics ([MVA](https://www.master-mva.com/)) and computer science and another in electrical engineering. I also passed (first position nation-wide in 2022) competitive exams to teach engineering science in french higher education. Find more about my education in the [CV](https://ludovicdematteis.github.io/cv/) section of this site.
 
 ## Publications
-For now my [publications](https://ludovicdematteis.github.io/publications/) are related to previous subjects from internships. Hopefully some results on my PhD subject will be out soon, stay tuned and see my Google Scholar page.
+You can find a list of my [publications](https://ludovicdematteis.github.io/publications/) in the dedicated section of this site. Some of these are from my PhD and some from my master's degree.
 
 ## Teaching
 During my PhD, I have the opportunity to have a first grasp on teaching robotics and automation in higher education. To have more information on my teaching experience, see the section [Teaching](https://ludovicdematteis.github.io/teaching/) of this website
