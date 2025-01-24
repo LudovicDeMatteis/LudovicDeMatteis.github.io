@@ -17,7 +17,7 @@ You can find a list of my [publications](https://ludovicdematteis.github.io/publ
 
 ## Teaching
 During my PhD, I have the opportunity to have a first grasp on teaching robotics and automation in higher education. To have more information on my teaching experience, see the section [Teaching](https://ludovicdematteis.github.io/teaching/) of this website
-I made a short presentation (in French) on CPGE at Lycée Chabrillan, you can find the slides [here](https://ludovicdematteis.github.io/files/2025_presentation_prepa_chebrillan/#).
+I made a short presentation (in French) on CPGE at Lycée Chabrillan, you can find the slides [here](https://ludovicdematteis.github.io/files/2025_presentation_prepa_chabrillan/#).
 
 ## Blog posts
 I plan to publish some tutorial in the [Blog Posts](https://ludovicdematteis.github.io/year-archive/) section of this site. None are out yet and I will add a link on this main page when the first one goes out.
