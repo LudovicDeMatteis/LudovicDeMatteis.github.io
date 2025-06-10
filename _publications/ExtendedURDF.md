@@ -1,0 +1,16 @@
+---
+title: "Extended URDF: Accounting for parallel mechanism in robot description"
+collection: publications
+permalink: /publication/ExtendedURDF
+excerpt: 'In this paper, we introduce an extension to the widely used Unified Robot Description Format (URDF) to support closed-loop kinematic structures. Our approach relies on augmenting URDF with minimal additional information to allow more efficient modeling of complex robotic systems while maintaining compatibility with existing design and simulation frameworks. '
+date: 2025-04-07
+venue: 'RAAD 2025'
+paperurl: 'https://arxiv.org/pdf/2504.04767'
+citation: 'Virgile Batto, Ludovic De Matteïs, Nicolas Mansard. Extended URDF: Accounting for parallel mechanism in robot description. 2025.'
+---
+# Abstract
+Robotic designs played an important role in recent advances by providing powerful robots with complex mechanics. Many recent systems rely on parallel actuation to provide lighter limbs and allow more complex motion. However, these emerging architectures fall outside the scope of most used description formats, leading to difficulties when designing, storing, and sharing the models of these systems. This paper introduces an extension to the widely used Unified Robot Description Format (URDF) to support closed-loop kinematic structures. Our approach relies on augmenting URDF with minimal additional information to allow more efficient modeling of complex robotic systems while maintaining compatibility with existing design and simulation frameworks. This method sets the basic requirement for a description format to handle parallel mechanisms efficiently. We demonstrate the applicability of our approach by providing an open-source collection of parallel robots, along with tools for generating and parsing this extended description format. The proposed extension simplifies robot modeling, reduces redundancy, and improves usability for advanced robotic applications.
+
+[Download paper here](https://arxiv.org/pdf/2504.04767)
+
+Recommended citation: Virgile Batto, Ludovic De Matteïs, Nicolas Mansard. Extended URDF: Accounting for parallel mechanism in robot description. 2025. 
