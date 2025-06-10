@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+You can download a pdf version of my resume [here](https://ludovicdematteis.github.io/files/CV.pdf).
+
 Education
 ======
 * Bachelor of Engineering, specialization in Electrical Engineering, ENS Paris-Saclay, 2019
