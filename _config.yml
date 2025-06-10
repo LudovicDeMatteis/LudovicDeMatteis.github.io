@@ -116,6 +116,14 @@ author:
   youtube          :
   wikipedia        :
 
+# Publication Category - The following the list of publication categories and their headings
+#publication_category:
+# books:
+    #    title: 'Books'
+# journals:
+    #    title: 'Journal Articles'
+# conferences:
+    #    title: 'Conference Papers'
 
 # Reading Files
 include:
@@ -127,6 +135,7 @@ exclude:
   - "*.sublime-workspace"
   - .asset-cache
   - .bundle
+  - .github
   - .jekyll-assets-cache
   - .sass-cache
   - CHANGELOG
