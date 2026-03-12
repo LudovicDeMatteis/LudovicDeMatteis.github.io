@@ -1,7 +1,7 @@
 ---
-title: "Agrégation - Competitive examination for teachers"
+title: "Agrégation - Competitive examination for teachers - Ranked First"
 collection: teaching
-type: "Competitve Examination"
+type: "Competitive Examination"
 permalink: /teaching/2022-agregation
 venue: "ENS Paris Saclay, Departement of Electrical engineering"
 date: 2022-06-23

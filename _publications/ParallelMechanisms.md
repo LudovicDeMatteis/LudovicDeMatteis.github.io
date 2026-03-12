@@ -4,7 +4,7 @@ collection: publications
 permalink: /publication/ParallelMechanisms
 excerpt: 'In this paper, we present a method for controlling robots with closed kinematic loops (such as parallel actuation). We propose demonstrate a method to take efficiently into account the closed kinematics by using analytical formulations of different mechanisms.'
 date: 2025-03-28
-venue: 'IEEE-IROS - Submitted, in review'
+venue: 'IEEE-ICRA'
 paperurl: 'https://arxiv.org/pdf/2503.22459'
 citation: 'Victor Lutz, Ludovic de Matteïs, Virgile Batto, Nicolas Mansard. Control of humanoid robots with parallel mechanisms using kinematic actuation models. 2025.'
 ---
@@ -13,4 +13,4 @@ Inspired by the mechanical design of Cassie, several recently released humanoid 
 
 [Download paper here](https://arxiv.org/pdf/2503.22459)
 
-Recommended citation: Victor Lutz, Ludovic de Matteïs, Virgile Batto, Nicolas Mansard. Control of humanoid robots with parallel mechanisms using kinematic actuation models. 2025. 
+Recommended citation: Victor Lutz, Ludovic De Matteis, Virgile Batto & Nicolas Mansard. Control of Humanoid Robots with Parallel Mechanisms using Differential Actuation Models. In 2026 IEEE International Conference on Robotics and Automation (ICRA). Vienna, Austria.

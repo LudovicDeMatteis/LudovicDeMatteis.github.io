@@ -1,5 +1,5 @@
 ---
-title: "Advanced robotics "
+title: "Advanced Robotics "
 collection: teaching
 type: "Undergraduate Course"
 permalink: /teaching/2024-spring-BUT
