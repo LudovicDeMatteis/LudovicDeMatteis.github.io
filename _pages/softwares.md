@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /software-development/
+permalink: /softwares/
 title: "Software Developments"
 author_profile: true
 ---
