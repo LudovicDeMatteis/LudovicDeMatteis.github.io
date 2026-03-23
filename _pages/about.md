@@ -14,11 +14,13 @@ I currently focus more on contact implicit motions using Path Integral approache
 I graduated from [ENS Paris Saclay](https://ens-paris-saclay.fr/) in 2023 with a Master degree in applied mathematics ([MVA](https://www.master-mva.com/)) and computer science and another in electrical engineering. I also passed (first position nation-wide in 2022) competitive exams to teach engineering science in french higher education. Find more about my education in the [CV](https://ludovicdematteis.github.io/cv/) section of this site.
 
 ## Publications
-You can find a list of my [publications](https://ludovicdematteis.github.io/publications/) in the dedicated section of this site. You can also find these on my Google Scholar page.
+You can find a list of my [publications](https://ludovicdematteis.github.io/publications/) in the dedicated section of this site or visit my Google Scholar profile.
+Feel free to contact me to discuss any of my work.
 
 ## Teaching
-During my PhD, I had the opportunity to have a first grasp on teaching robotics and automation in higher education. To have more information on my teaching experience, see the section [Teaching](https://ludovicdematteis.github.io/teaching/) of this website
-I made a short presentation (in French) on CPGE at Lycée Chabrillan, you can find the slides [here](https://ludovicdematteis.github.io/files/2025_presentation_prepa_chabrillan/#).
+During my PhD, I had the opportunity to have a first grasp on teaching robotics and automation in higher education. 
+I also **ranked first** at the french "Agregation" exam for higher education teachers.
+To have more information on my teaching experience, see the section [Teaching](https://ludovicdematteis.github.io/teaching/) of this website or contact me.
 
-## Blog posts
-I plan to publish some tutorial in the [Blog Posts](https://ludovicdematteis.github.io/year-archive/) section of this site. None are out yet and I will add a link on this main page when the first one goes out.
+I also made a short presentation (in French) on CPGE at Lycée Chabrillan, you can find the slides [here](https://ludovicdematteis.github.io/files/2025_presentation_prepa_chabrillan/#) - and feel free to use them for your own presentations.
+
