@@ -72,15 +72,13 @@ layout: default
 	</a>
 	{% endif %}
 	<button class="box-link" onclick="myPopup.showModal()">
-  Open Cite Info
-</button>
-
-<dialog id="myPopup">
-  <h3>GitHub Profile</h3>
-  <p>This is a small popup triggered by your custom button!</p>
-  <button class="box-link" onclick="myPopup.close()" style="background: #d73a49;">Close</button>
-</dialog>
-    
+	  Open Cite Info
+	</button>
+	<dialog id="citation-popup">
+	  <button class="close-cross" onclick="myPopup.close()">&times;</button>
+	  <h3>Recommended citation</h3>
+	  <p>{{page.citation}}</p>
+	</dialog>
         </header>
       {% endunless %}
 
