@@ -50,18 +50,36 @@ layout: default
 	{% if page.githublink %}
 	  <a href="{{ page.githublink }}" class="box_link">
 	    Code
-	    <img src="{{ "/images/github_logo.png" | prepend: base_path }}" style="width: 100px; height: auto">  
+	    <img src="{{ "/images/github_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
 	  </a>
 	{% endif %}
 	{% if page.paperlink %}
-	<a href="{{page.paperlink}}" class="box_link">Paper</a>
+	<a href="{{page.paperlink}}" class="box_link">
+	    Paper
+	    <img src="{{ "/images/file_icon.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	</a>
 	{% endif %}
 	{% if page.hal %}
-	<a href="{{ page.hal }}" class="box_link">HAL</a>
+	<a href="{{ page.hal }}" class="box_link">
+	  <img src="{{ "/images/hal_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	  HAL
+	</a>
 	{% endif %}
 	{% if page.arxiv %}
-	<a href="{{page.arxiv}}" class="box_link">Arxiv</a>
+	<a href="{{page.arxiv}}" class="box_link">
+	  <img src="{{ "/images/arxiv_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	  Arxiv
+	</a>
 	{% endif %}
+	<button class="box-link" onclick="myPopup.showModal()">
+  Open Cite Info
+</button>
+
+<dialog id="myPopup">
+  <h3>GitHub Profile</h3>
+  <p>This is a small popup triggered by your custom button!</p>
+  <button class="box-link" onclick="myPopup.close()" style="background: #d73a49;">Close</button>
+</dialog>
     
         </header>
       {% endunless %}
