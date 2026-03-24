@@ -42,12 +42,7 @@ layout: default
           <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
         
-             
 	<div class="button-container">
-	  {% if page.citation %}
-	    <p>Recommended citation: {{ page.citation }} </p>
-	  {% endif %}
-	  
 	  {% if page.githublink %}
 	    <a href="{{ page.githublink }}" class="box_link">
 	      Code
@@ -104,6 +99,11 @@ layout: default
     {% if site.comments.provider and page.comments %}
       {% include comments.html %}
     {% endif %}
+
+    {% if page.citation %}
+      <p>Recommended citation: {{ page.citation }} </p>
+    {% endif %}
+	  
   </article>
 
   {% comment %}<!-- only show related on a post page when not disabled -->{% endcomment %}
