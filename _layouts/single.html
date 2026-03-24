@@ -44,17 +44,17 @@ layout: default
         
              
         {% if page.citation %}
-          <p>Recommended citation (in single): {{ page.citation }} </p>
+          <p>Recommended citation: {{ page.citation }} </p>
         {% endif %}
 	
 	{% if page.githublink %}
-	<a href="{{ page.githublink }}" class="box-link">Code</a>
+	<a href="{{ page.githublink }}" class="box_link">Code</a>
 	{% endif %}
 	{% if page.hal %}
-	<a href="{{ page.hal }}" class="box-link">HAL</a>
+	<a href="{{ page.hal }}" class="box_link">HAL</a>
 	{% endif %}
 	{% if page.paperlink %}
-	<a href="{{page.paperlink}}" class="box-link">Paper</a>
+	<a href="{{page.paperlink}}" class="box_link">Paper</a>
 	{% endif %}
     
         </header>
