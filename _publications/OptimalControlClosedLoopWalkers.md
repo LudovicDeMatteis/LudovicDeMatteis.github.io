@@ -3,7 +3,6 @@ title: "Optimal Control of Closed Loop Walkers"
 collection: publications
 permalink: /publication/OptimalControlClosedLoopWalkers
 excerpt: 'In this paper, we present a method for controlling robots with closed kinematic loops (such as parallel actuation). We propose to use a serial model - for instance based on an underlying main chain - and to use additionnal constraints to account for closures. We demonstrate the advatages of this method by comparing it to a classical simplified model of the robot on several motions (walk, jump, sidewalk, and climbing stairs).'
-date: 2025-05-19
 venue: 'IEEE-IROS 2025'
 citation: 'Ludovic De Matteis, Virgile Batto, Justin Carpentier & Nicolas Mansard. (2025, October). Optimal Control of Walkers with Parallel Actuation. In 2025 IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS). Hangzhou, China.'
 hal: 'https://hal.science/hal-04716938v3'

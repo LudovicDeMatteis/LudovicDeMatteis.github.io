@@ -57,22 +57,22 @@ layout: default
 	  {% endif %}
 	  {% if page.hal %}
 	  <a href="{{ page.hal }}" class="box_link">
-	    <img src="{{ "/images/hal_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
 	    HAL
+	    <img src="{{ "/images/hal_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
 	  </a>
 	  {% endif %}
 	  {% if page.arxiv %}
 	  <a href="{{page.arxiv}}" class="box_link">
 	    <img src="{{ "/images/arxiv_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
-	    Arxiv
 	  </a>
 	  {% endif %}
 	  <button class="box-link" onclick="myPopup.showModal()">
-	    Open Cite Info
+	    BibTex
+	    <img src="{{ "/images/book_icon.png" | prepend: base_path }}" style="height: 20px; width: auto">  
 	  </button>
 	  <dialog id="citation-popup">
 	    <button class="close-cross" onclick="myPopup.close()">&times;</button>
-	    <h3>Recommended citation</h3>
+	    <h3>Bibtex</h3>
 	    <p>{{page.citation}}</p>
 	  </dialog>
 	</div>
