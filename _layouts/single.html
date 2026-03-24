@@ -66,15 +66,17 @@ layout: default
 	    <img src="{{ "/images/arxiv_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
 	  </a>
 	  {% endif %}
-	  <button class="box-link" onclick="myPopup.showModal()">
-	    BibTex
-	    <img src="{{ "/images/book_icon.png" | prepend: base_path }}" style="height: 20px; width: auto">  
-	  </button>
-	  <dialog id="citation-popup">
-	    <button class="close-cross" onclick="myPopup.close()">&times;</button>
-	    <h3>Bibtex</h3>
-	    <p>{{page.citation}}</p>
-	  </dialog>
+	  {% if page.citation %}
+	    <button class="box-link" onclick="myPopup.showModal()">
+	      BibTex
+	      <img src="{{ "/images/book_icon.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	    </button>
+	    <dialog id="citation-popup">
+	      <button class="close-cross" onclick="myPopup.close()">&times;</button>
+	      <h3>Bibtex</h3>
+	      <p>{{page.citation}}</p>
+	    </dialog>
+	  {% endif %}
 	</div>
         </header>
       {% endunless %}
