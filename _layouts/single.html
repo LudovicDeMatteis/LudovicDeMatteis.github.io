@@ -48,13 +48,19 @@ layout: default
         {% endif %}
 	
 	{% if page.githublink %}
-	<a href="{{ page.githublink }}" class="box_link">Code</a>
+	  <a href="{{ page.githublink }}" class="box_link">
+	    Code
+	    <img src="{{ "/images/github_logo.png" | prepend: base_path }}" style="width: 100px; height: auto">  
+	  </a>
+	{% endif %}
+	{% if page.paperlink %}
+	<a href="{{page.paperlink}}" class="box_link">Paper</a>
 	{% endif %}
 	{% if page.hal %}
 	<a href="{{ page.hal }}" class="box_link">HAL</a>
 	{% endif %}
-	{% if page.paperlink %}
-	<a href="{{page.paperlink}}" class="box_link">Paper</a>
+	{% if page.arxiv %}
+	<a href="{{page.arxiv}}" class="box_link">Arxiv</a>
 	{% endif %}
     
         </header>
