@@ -43,11 +43,19 @@ layout: default
         {% endif %}
         
              
-        {% if page.citation and page.paperurl %}
-          <p>Recommended citation (in single): {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
-        {% elsif page.citation %}
+        {% if page.citation %}
           <p>Recommended citation (in single): {{ page.citation }} </p>
         {% endif %}
+	
+	{% if page.githublink %}
+	<a href="{{ page.githublink }}" class="box-link">Code</a>
+	{% endif %}
+	{% if page.hal %}
+	<a href="{{ page.hal }}" class="box-link">HAL</a>
+	{% endif %}
+	{% if page.paperlink %}
+	<a href="{{page.paperlink}}" class="box-link">Paper</a>
+	{% endif %}
     
         </header>
       {% endunless %}

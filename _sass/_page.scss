@@ -399,3 +399,21 @@
   font-size: $type-size-6;
   text-transform: uppercase;
 }
+
+.box-link {
+  display: inline-flex; /* Changed from inline-block to align items easily */
+  align-items: center;  /* Centers icon and text vertically */
+  gap: 10px;            /* Adds space between the icon and the text */
+  
+  padding: 10px 20px;
+  background-color: #6684b0; /* Dark GitHub-style color */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-family: -apple-system, sans-serif;
+  font-weight: 600;
+}
+
+.box-link:hover {
+  background-color: #82a8e0;
+}
