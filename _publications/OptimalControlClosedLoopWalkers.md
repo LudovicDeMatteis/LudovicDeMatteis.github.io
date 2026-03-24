@@ -7,7 +7,7 @@ date: 2025-05-19
 venue: 'IEEE-IROS 2025'
 citation: 'Ludovic De Matteis, Virgile Batto, Justin Carpentier, Nicolas Mansard. Optimal Control of Walkers with Parallel Actuation. 2024.'
 hal: 'https://hal.science/hal-04716938v3'
-paperlink: 'https://ludovicdematteis.github.io/files/papers/Optimal_Control_of_Closed_Loop_walkers'
+paperlink: 'https://ludovicdematteis.github.io/files/papers/Optimal_Control_of_Closed_Loop_walkers.pdf'
 githublink: 'https://github.com/LudovicDeMatteis/ClosedLoopMotion'
 arxiv: 'https://arxiv.org/abs/2504.00642'
 ---

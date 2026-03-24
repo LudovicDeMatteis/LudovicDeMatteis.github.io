@@ -43,42 +43,44 @@ layout: default
         {% endif %}
         
              
-        {% if page.citation %}
-          <p>Recommended citation: {{ page.citation }} </p>
-        {% endif %}
-	
-	{% if page.githublink %}
-	  <a href="{{ page.githublink }}" class="box_link">
-	    Code
-	    <img src="{{ "/images/github_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	<div class="button-container">
+	  {% if page.citation %}
+	    <p>Recommended citation: {{ page.citation }} </p>
+	  {% endif %}
+	  
+	  {% if page.githublink %}
+	    <a href="{{ page.githublink }}" class="box_link">
+	      Code
+	      <img src="{{ "/images/github_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	    </a>
+	  {% endif %}
+	  {% if page.paperlink %}
+	  <a href="{{page.paperlink}}" class="box_link">
+	      Paper
+	      <img src="{{ "/images/file_icon.png" | prepend: base_path }}" style="height: 20px; width: auto">  
 	  </a>
-	{% endif %}
-	{% if page.paperlink %}
-	<a href="{{page.paperlink}}" class="box_link">
-	    Paper
-	    <img src="{{ "/images/file_icon.png" | prepend: base_path }}" style="height: 20px; width: auto">  
-	</a>
-	{% endif %}
-	{% if page.hal %}
-	<a href="{{ page.hal }}" class="box_link">
-	  <img src="{{ "/images/hal_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
-	  HAL
-	</a>
-	{% endif %}
-	{% if page.arxiv %}
-	<a href="{{page.arxiv}}" class="box_link">
-	  <img src="{{ "/images/arxiv_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
-	  Arxiv
-	</a>
-	{% endif %}
-	<button class="box-link" onclick="myPopup.showModal()">
-	  Open Cite Info
-	</button>
-	<dialog id="citation-popup">
-	  <button class="close-cross" onclick="myPopup.close()">&times;</button>
-	  <h3>Recommended citation</h3>
-	  <p>{{page.citation}}</p>
-	</dialog>
+	  {% endif %}
+	  {% if page.hal %}
+	  <a href="{{ page.hal }}" class="box_link">
+	    <img src="{{ "/images/hal_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	    HAL
+	  </a>
+	  {% endif %}
+	  {% if page.arxiv %}
+	  <a href="{{page.arxiv}}" class="box_link">
+	    <img src="{{ "/images/arxiv_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	    Arxiv
+	  </a>
+	  {% endif %}
+	  <button class="box-link" onclick="myPopup.showModal()">
+	    Open Cite Info
+	  </button>
+	  <dialog id="citation-popup">
+	    <button class="close-cross" onclick="myPopup.close()">&times;</button>
+	    <h3>Recommended citation</h3>
+	    <p>{{page.citation}}</p>
+	  </dialog>
+	</div>
         </header>
       {% endunless %}
 
