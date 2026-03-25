@@ -26,7 +26,9 @@ layout: default
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
         <header>
-          {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
+          {% if page.title %}
+	    <h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>
+	  {% endif %}
           {% if page.read_time %}
             <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
           {% endif %}
@@ -36,45 +38,122 @@ layout: default
         
         {% if page.collection == 'teaching' %}
           <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+        {% elsif page.collection == 'publications' %}
+	  {% if page.conference-name and page.conference-year %}
+	    <p>
+	      Published in <i>{{ page.conference-year}} {{page.conference-name}}</i> 
+	    </p>
+	  {% endif %}
         {% endif %}
-        
 	<div class="button-container">
 	  {% if page.githublink %}
 	    <a href="{{ page.githublink }}" class="box_link">
 	      Code
-	      <img src="{{ "/images/github_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	      <img src="{{ "/images/github_logo.png" | prepend: base_path }}">  
 	    </a>
 	  {% endif %}
 	  {% if page.paperlink %}
 	  <a href="{{page.paperlink}}" class="box_link">
 	      Paper
-	      <img src="{{ "/images/file_icon.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	      <img src="{{ "/images/file_icon.png" | prepend: base_path }}">  
 	  </a>
 	  {% endif %}
 	  {% if page.hal %}
 	  <a href="{{ page.hal }}" class="box_link">
 	    HAL
-	    <img src="{{ "/images/hal_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	    <img src="{{ "/images/hal_logo.png" | prepend: base_path }}">  
 	  </a>
 	  {% endif %}
 	  {% if page.arxiv %}
 	  <a href="{{page.arxiv}}" class="box_link">
-	    <img src="{{ "/images/arxiv_logo.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	    <img src="{{ "/images/arxiv_logo.png" | prepend: base_path }}">  
 	  </a>
 	  {% endif %}
-	  {% if page.citation %}
-	    <button class="box-link" onclick="myPopup.showModal()">
+	  {% if page.bibtex %}
+	    <button class="box_link" command="show-modal" commandfor="citation-popup">
 	      BibTex
-	      <img src="{{ "/images/book_icon.png" | prepend: base_path }}" style="height: 20px; width: auto">  
+	      <img src="{{ "/images/book_icon.png" | prepend: base_path }}">  
 	    </button>
-	    <dialog id="citation-popup">
-	      <button class="close-cross" onclick="myPopup.close()">&times;</button>
+	    <dialog id="citation-popup" closedby="any">
+	      <button class="close-cross" commandfor="citation-popup" command="close">&times;</button>
 	      <h3>Bibtex</h3>
-	      <p>{{page.citation}}</p>
+	       <div class="whole-text">
+	        <!-- Type (article, inproceedings, book...) -->
+		<div class="bibtex-line">
+		  <span class="bibtex-type">@{{page.bibtex.type}}</span>
+		  {
+		  <span class="bibtex-ref">{{page.bibtex.ref}}</span>
+		  ,     
+		</div>
+	        <!-- Title  -->
+		<div class="bibtex-line">
+		  <span class="bibtex-attribute">TITLE </span>
+		  = { {{page.title}} },
+		</div>
+	        <!-- Author -->
+		<div class="bibtex-line">
+		  <span class="bibtex-attribute">
+		    AUTHOR 
+		  </span>
+		  <span>
+		  = 
+		  { {{page.bibtex.authors}} },
+		  </span>
+		</div>
+	        <!-- Paper link -->
+	        {% if page.hal %}
+		  <div class="bibtex-line">
+		    <span class="bibtex-attribute">
+		      URL 
+		    </span>
+		    =
+		    { {{page.hal}} },
+		  </div>
+		{% elsif page.arxiv%}
+		  <div class="bibtex-line">
+		    <span class="bibtex-attribute">
+		      URL 
+		    </span>
+		    =
+		    { {{page.arxiv}} },
+		  </div> 
+	        {% endif %}
+	        <!-- Booktitle info (if inproceedings) -->
+	        {% if page.bibtex.type == "inproceedings" %}
+		<div class="bibtex-line">
+		  <span class="bibtex-attribute">
+		    BOOKTITLE
+		  </span>
+		  =
+		  { {{page.conference-year}} {{page.conference-name}} },
+		</div>
+		<div class="bibtex-line">
+		  <span class="bibtex-attribute">
+		    ADDRESS
+		  </span>
+		  =
+		  { {{page.conference-address}} },
+		</div>
+	        {% elsif page.bibtex.type == "journal" %}
+		<div class="bibtex-line">
+		  <span class="bibtex-attribute">
+		    BOOKTITLE
+		  </span>
+		  =
+		  { {{page.journal-name}} },
+		</div>
+	        {% endif %}
+		<div class="bibtex-line">
+		  <span class="bibtex-attribute">
+		    YEAR
+		  </span>
+		  =
+		  { {{page.year}} },
+		</div>
+		<div class="bibtex-line">
+		  }
+		</div>
+	       </div>
 	    </dialog>
 	  {% endif %}
 	</div>
@@ -86,8 +165,9 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
-      {% if page.citation %}
-	<p>Recommended citation: {{ page.citation }} </p>
+      {% if page.collection == "publications" %}
+	<h2> Recommended citation </h2>
+	<i>{{ page.title }}, {{page.authors}}, {{page.conference-year}} {{page.conference-name}}, {{page.conference-address}}, {{page.year}} </i>
       {% endif %}
 
       <footer class="page__meta">

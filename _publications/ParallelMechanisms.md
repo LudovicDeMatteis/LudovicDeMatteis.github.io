@@ -1,13 +1,23 @@
 ---
-title: "Control of humanoid robots with parallel mechanisms using kinematic actuation models"
+# Site info
 collection: publications
 permalink: /publication/ParallelMechanisms
+# Paper info
+title: "Control of humanoid robots with parallel mechanisms using kinematic actuation models"
+authors: "Victor Lutz, Ludovic De Matteis, Virgile Batto and Nicolas Mansard"
 excerpt: 'In this paper, we present a method for controlling robots with closed kinematic loops (such as parallel actuation). We propose demonstrate a method to take efficiently into account the closed kinematics by using analytical formulations of different mechanisms.'
-venue: 'IEEE-ICRA'
-citation: 'Victor Lutz, Ludovic de Matteïs, Virgile Batto, Nicolas Mansard. Control of humanoid robots with parallel mechanisms using kinematic actuation models. 2025.'
+year: "2025"
+
+# Conference info
+conference-name: 'IEEE/RJS International Conference on Robotics and Automation (ICRA)'
+conference-address: "Vienna, Austria"
+conference-year: "2026"
+
+# Links
 arxiv: "https://arxiv.org/abs/2503.22459"
 hal: "https://laas.hal.science/hal-04984842v1"
 paperlink: "https://ludovicdematteis.github.io/files/papers/Differential_Actuation_Models.pdf"
+bibtex: {type: "inproceedings", authors: "Lutz, Victor and De Matteis, Ludovic and Batto, Virgile and Mansard, Nicolas", ref: "lutz_kinematicactuation"}
 ---
 <div style="display: flex; justify-content: center; margin: 20px 0;">
     <iframe title="Control of Humanoid Robots with Parallel Mechanisms using Differential Actuation Models" width="560" height="315" src="https://peertube.laas.fr/videos/embed/mqFnxkVPswa1CTP6hS5Z7S" style="border: 0px;" allow="fullscreen" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>

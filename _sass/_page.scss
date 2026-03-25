@@ -31,22 +31,32 @@
     .page__share {
       @include full();
     }
+
     .box_link {
       display: inline-flex; /* Changed from inline-block to align items easily */
       align-items: center;  /* Centers icon and text vertically */
       gap: 10px;            /* Adds space between the icon and the text */
-      
-      padding: 10px 20px;
+      padding: 0 20px;
       background-color: #a4dced; /* Dark GitHub-style color */
-      color: white;
+      color: #444444;
       text-decoration: none;
       border-radius: 6px;
       font-weight: 600;
+      height: 50px;
+      box-sizing: border-box;
+      border: none;
+    }
+
+    .box_link img {
+      height: 24px;      /* Matches the text size visually */
+      width: auto;       /* Maintains original proportions */
+      display: block;    /* Removes extra bottom spacing */
     }
 
     .box_link:hover {
       background-color: #bdf0ff;
     }
+
     .button-container {
       display: flex;         /* Enables flexbox */
       justify-content: center; /* Centers buttons horizontally */
@@ -55,6 +65,7 @@
       width: 100%;             /* Ensures it spans the full width */
       margin: 20px 0;          /* Adds space above and below the line */
     }
+
     .close-cross {
       position: absolute;
       top: 10px;
@@ -71,19 +82,51 @@
     .close-cross:hover {
       color: #333;
     }
+
     dialog {
       position: relative; /* Essential for positioning the cross */
-      padding: 30px 20px 20px; /* Extra top padding so text doesn't hit the cross */
+      padding: 10px; /* Extra top padding so text doesn't hit the cross */
       border-radius: 12px;
       border: none;
+      min-width:50%;
+      max-width:50%;
       box-shadow: 0 10px 25px rgba(0,0,0,0.2);
     }
   }
 }
 
+.bibtex-type {
+  color:#0b1c61;
+}
+
+.bibtex-ref {
+  color:#006620;
+}
+
+.bibtex-line {
+  display: flex;
+  font-size: 16px;
+}
+
+.bibtex-attribute {
+  padding-left: 20px;
+  color: #801703;
+}
+
+.whole-text{
+  display:flex;
+  flex-direction: column;
+  padding: 12px;
+  background-color: #eeeeee;
+  border-radius: 12px;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+}
+
 .page__title {
   margin-top: 0;
   line-height: 1;
+  text-align: center;
 
   & + .page__meta {
     margin-top: -0.5em;
