@@ -133,6 +133,21 @@
   }
 }
 
+.page__authors {
+  margin-top: 0.5em;
+  width: 100%;
+  text-align: center;
+  font-style: italic;
+}
+
+.page__authors_small {
+  margin-top: 0.0em;
+  width: 100%;
+  text-align: left;
+  font-style: italic;
+  font-size: $type-size-6;
+}
+
 .page__lead {
   font-family: $global-font-family;
   font-size: $type-size-4;
