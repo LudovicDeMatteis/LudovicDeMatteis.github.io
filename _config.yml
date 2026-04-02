@@ -9,6 +9,8 @@
 locale                   : "en-US"
 title                    : "Ludovic De Matteis"
 title_separator          : "-"
+minimal_mistakes_skin    : "air"
+theme                    : minimal-mistakes-jekyll
 name                     : &name "Ludovic De Matteis"
 description              : &description "PhD Student"
 url                      : https://ludovicdematteis.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
