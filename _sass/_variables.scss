@@ -58,10 +58,12 @@ $background-color           : #F4EDEA;
 $code-background-color      : #C5D8D1;
 $code-background-color-dark : $light-gray;
 $text-color                 : $dark-gray;
-$border-color               : $lighter-gray;
+$border-color               : $background_color;
 $footer-background          : #AACDDC;
 $footer-font                : #12263A;
 $header-background          : $footer-background;
+$footer-font-hover          : mix(#fff, $footer-font, 25%);
+$button-underline           : mix(#000, $footer-background, 25%);
 
 $primary-color              : #7a8288;
 $success-color              : #62c462;

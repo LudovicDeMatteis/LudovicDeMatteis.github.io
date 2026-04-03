@@ -8,6 +8,10 @@ redirect_from:
 ---
 
 {% include base_path %}
+<div style="display: flex; justify-content: center; margin: 20px 0;">
+    <iframe title="CV_Ludovic_DeMatteis" width="80%" height="100%" src="https://ludovicdematteis.github.io/files/CV.pdf">
+    </iframe>
+</div>
 
 You can download a pdf version of my resume [here](https://ludovicdematteis.github.io/files/CV.pdf).
 
@@ -25,12 +29,6 @@ Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks %}
-    {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
   
 Teaching
