@@ -6,16 +6,7 @@ author_profile: true
 redirect_from:
   - /resume
 ---
-<div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
-  <div class="button-container">
-      <a target="_blank" rel="noopener noreferrer" href="https://ludovicdematteis.github.io/files/CV_DeMatteis.pdf" class="box_link">
-	Download PDF
-	<img src="{{ "/images/file_icon.png" | prepend: base_path }}">  
-      </a>
-  </div>
-  </article>
-</div>
+{% include archive-cv-button.html %}
 
 Education
 ======
