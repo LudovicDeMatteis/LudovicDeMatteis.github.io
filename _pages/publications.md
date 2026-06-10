@@ -57,14 +57,12 @@ author_profile: true
 </div>
 
 {% include base_path %}
-<!-- New style rendering if publication categories are defined -->
+
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
+    {% assign filtered_posts = site.publications | where: "category", category[0] | sort: "year" | reverse %}
+    {% for post in filtered_posts %}
       {% unless title_shown %}
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
@@ -73,7 +71,8 @@ author_profile: true
     {% endfor %}
   {% endfor %}
 {% else %}
-  {% for post in site.publications reversed %}
+  {% assign sorted_posts = site.publications | sort: "year" | reverse %}
+  {% for post in sorted_posts %}
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
