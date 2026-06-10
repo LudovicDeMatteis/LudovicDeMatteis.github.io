@@ -1,0 +1,172 @@
+{% include base_path %}
+
+{% if post.header.teaser %}
+  {% capture teaser %}{{ post.header.teaser }}{% endcapture %}
+{% else %}
+  {% assign teaser = site.teaser %}
+{% endif %}
+
+{% assign title = post.title %}
+
+<style>
+  .timeline-container {
+    display: grid;
+    grid-template-columns: 2px 1fr 1fr; /* Axe | Colonne 1 | Colonne 2 */
+    gap: 0 20px;
+    max-width: 100%;
+    margin: 30px auto;
+    font-family: sans-serif;
+  }
+
+  /* L'axe avec la flèche */
+  .axis {
+    grid-column: 1;
+    background: #2c3e50;
+    position: relative;
+    grid-row: 1 / 10;
+  }
+
+  .axis::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: -6px;
+    border-left: 8px solid transparent;
+    border-right: 8px solid transparent;
+    border-bottom: 15px solid #2c3e50;
+  }
+
+  /* Événements */
+  .event {
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border-left: 4px solid #3498db;
+    background: #f8f9fa;
+    align-items: center;
+  }
+
+  /* Grille interne à l'événement */
+  .event-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr; 
+    gap: 10px;
+    align-items: center;
+  }
+
+  .logo {
+    width: auto;
+    height: 80px;
+    object-fit: contain;
+    grid-row: 1 / 4; /* Le logo s'étend sur les 3 lignes de texte */
+    grid-column: 2; /* Le logo est dans la deuxième colonne */
+  }
+
+  .event.sub { border-left-color: #e67e22; background: #fff5eb; }
+
+  .date { font-weight: bold; font-size: 0.85em; color: #555; display: block; }
+  .title { font-weight: bold; display: block; margin-top: 3px; }
+  small { color: #666; display: block; line-height: 1.2; }
+
+  /* Placement manuel pour la superposition */
+  .row-phd { grid-row: 2 ; grid-column: 2 / 4; }
+  .row-ens { grid-row: 3 / 9; grid-column: 2; }
+  .row-mva { grid-row: 3; grid-column: 3; }
+  .row-agreg { grid-row: 4; grid-column: 3; }
+  .row-trinity { grid-row: 5; grid-column: 3; }
+  .row-stage-epfl { grid-row: 6; grid-column: 3; }
+  .row-epfl { grid-row: 7; grid-column: 3; }
+  .row-prepa { grid-row: 9; grid-column: 2; }
+  .row-empty1 { grid-row: 8; grid-column: 2; height: 50px; } /* Ligne vide pour espacer les événements */
+</style>
+
+<div class="timeline-container">
+  <div class="axis"></div>
+
+  <div class="event row-phd">
+    <div class="event-grid">
+      <div>
+	<span class="date">Sept 2023 - September 2026</span>
+	<span class="title">PhD in Robotics and Computer Science</span>
+	Laboratoire d'analyse et d'architecture des systèmes (LAAS), CNRS, Toulouse, France
+	Université de Toulouse, France
+	<small>Supervised by Nicolas Mansard</small>
+      </div>
+      <img src="{{"/images/logo_laas.png" | prepend: base_path}}" alt="Logo" class="logo">
+    </div>
+  </div>
+
+  <div class="event row-mva sub">
+    <div class="event-grid">
+      <div>
+	<span class="date">Sept 2022 - Juin 2023</span>
+	<span class="title">Master of Mathematics, Vision and Learning (MVA)</span>
+	<small>Université Paris-Saclay</small>
+      </div>
+      <img src="{{"/images/logo_uni_saclay.png" | prepend: base_path}}" alt="Logo" class="logo">
+    </div>
+  </div>
+
+  <div class="event row-agreg sub">
+    <div>
+      <span class="date">Sept 2021 - Juin 2022</span>
+      <span class="title">Agrégation (French national competitive examination for high-level teacher certification)</span>
+      <small>Ranked 1st nation-wide in Engineering Science and Industrial Informatics</small>
+    </div>
+  </div>
+
+  <div class="event row-trinity sub">
+    <div class="event-grid">
+      <div>
+	<span class="date">Sept 2020 - Juin 2021</span>
+	<span class="title">Trinity College</span>
+	<small>Année de recherche prédoctorale à l'étranger</small>
+      </div>
+      <img src="{{"/images/logo_trinity.png" | prepend: base_path}}" alt="Logo" class="logo">
+    </div>
+  </div>
+
+  <div class="event row-stage-epfl sub">
+    <div class="event-grid">
+      <div>
+	<span class="date">Juin 2020 - Août 2020</span>
+	<span class="title">Research Internship</span>
+	<small>Laboratory of Intelligent Systems (LIS), Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland</small>
+	<!-- <small>Personalized human-swarm interaction through hand motion</small> -->
+      </div>
+      <img src="{{"/images/logo_lis.jpeg" | prepend: base_path}}" alt="Logo" class="logo">
+    </div>
+  </div>
+
+  <div class="event row-epfl sub">
+    <div class="event-grid">
+      <div>
+	<span class="date">Jan 2020 - Juin 2020</span>
+	<span class="title">Exchange student in Computer Science & Electrical Engineering</span>
+	<small>Ecole Polytechnique Fédérale de Lausanne (EPFL), Switzerland</small>
+      </div>
+      <img src="{{"/images/logo_epfl.png" | prepend: base_path}}" alt="Logo" class="logo">
+    </div>
+  </div>
+
+  <div class="event row-ens">
+    <div class="event-grid">
+      <span class="date">Sept 2018 - Août 2023</span>
+      <span class="title">Bachelor and Master's degrees</span>
+      ENS Paris-Saclay, France
+      <img src="{{"/images/logo_ens.png" | prepend: base_path}}" alt="Logo" class="logo">
+    </div>
+  </div>
+  <div class="row-empty1"></div> <!-- Ligne vide pour espacer les événements -->
+
+  <div class="event row-prepa">
+    <div class="event-grid">
+      <span class="date">Sept 2016 - Août 2018</span>
+      <span class="title">Classe préparatoire PT</span>
+      <small>Lycee La Martiniere Monplaisir (Lyon)</small>
+      <img src="{{"/images/logo_lamartin.png" | prepend: base_path}}" alt="Logo" class="logo">
+    </div>
+  </div>
+</div>
+
+
